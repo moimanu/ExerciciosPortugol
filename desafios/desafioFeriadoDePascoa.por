@@ -3,19 +3,23 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro vNota, vMoeda, vCompra
-		
-		vNota = 5
-		vMoeda = 1
+		inteiro vCompra, vNota, vMoeda
 
+		// Entrada
 		escreva("Digite o valor da compra: ")
 		leia(vCompra)
 
+		// Processos
+		vNota = 5
+		vMoeda = 1
 		se (vCompra > 10*vNota + 10*vMoeda) {
+			// Saída 1
 			escreva("Você não possui dinheiro suficiente.")
 		} senao se (vCompra >= 50) {
+			// Saída 2
 			escreva("Use 10 notas e ", vCompra-50/vMoeda, " moedas.")
 		} senao {
+			// Saída 3
 			escreva("Use ", vCompra/vNota, " notas e ", vCompra%vNota/vMoeda, " moedas.")
 		}
 	}
@@ -25,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 155; 
+ * @POSICAO-CURSOR = 503; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
