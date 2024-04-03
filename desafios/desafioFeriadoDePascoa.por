@@ -15,12 +15,12 @@ programa
 		se (vCompra > 10*vNota + 10*vMoeda) {
 			// Saída 1
 			escreva("Você não possui dinheiro suficiente.")
-		} senao se (vCompra >= 50) {
+		} senao se (vCompra >= 55) {
 			// Saída 2
 			escreva("Use 10 notas e ", vCompra-50/vMoeda, " moedas.")
 		} senao {
 			// Saída 3
-			escreva("Use ", vCompra/vNota, " notas e ", vCompra%vNota/vMoeda, " moedas.")
+			escreva("Use ", vCompra/vNota, " notas e ", vCompra%vNota, " moedas.")
 		}
 	}
 }
@@ -29,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 503; 
+ * @POSICAO-CURSOR = 309; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
