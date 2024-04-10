@@ -1,25 +1,26 @@
-// Exer. 33: Encontrar a quantidade gasta de gasolina, bem como o valor.
 programa
 {
 	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
-		real distancia, consumo, valorLGasolina, gasto
+		real distancia, consumo, valorLGasolina, gasto, litroGasto, valorGasto
 
 		// Entradas
 		escreva("Digite a distância da viagem (ida e volta) em km: ")
 		leia(distancia)
 		escreva("Digite o preço da gasolina, por litro: ")
 		leia(valorLGasolina)
+		escreva("Digite o consumo do carro, em km por litro: ")
+		leia(consumo)
 
 		// Processo
-		consumo = distancia/11.5
-		gasto = consumo*valorLGasolina
+		litroGasto = distancia/consumo
+		valorGasto = consumo*valorLGasolina
 
 		// Saídas
-		escreva("Quantidade gasta de gasolina, em litros: ", mat.arredondar(consumo, 2), "\n")
-		escreva("Valor gasto: ", mat.arredondar(gasto, 2)) 
+		escreva("Quantidade gasta de gasolina, em litros: ", mat.arredondar(litroGasto, 2), "\n")
+		escreva("Valor gasto: ", mat.arredondar(valorGasto, 2)) 
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 72; 
+ * @POSICAO-CURSOR = 465; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
