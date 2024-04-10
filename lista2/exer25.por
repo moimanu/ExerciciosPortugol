@@ -1,4 +1,3 @@
-// Exer. 25: Encontrar a quantidade de pisos gastos.
 programa
 {
 	inclua biblioteca Tipos --> tip
@@ -14,12 +13,15 @@ programa
 
 		// Processo
 		qntdDePisos = (lado*lado)/0.3
-		pisosGastos = tip.real_para_inteiro(qntdDePisos) + 1
+		pisosGastos = tip.real_para_inteiro(qntdDePisos)
 
+		se (qntdDePisos - pisosGastos != 0) {
+			pisosGastos = pisosGastos + 1
+		}
+		
 		// Saída
 		escreva("A área do chão é de: ", lado*lado, "m².\n")
 		escreva("A quantidade de pisos gastos foi de: ", pisosGastos, " pisos.")
-
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 52; 
+ * @POSICAO-CURSOR = 500; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
