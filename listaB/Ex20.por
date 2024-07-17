@@ -1,24 +1,9 @@
 programa {
   funcao inicio() {
 
-    inteiro vegetariano, peixe, frango, carne, abacaxi, sorveteDiet, mousseDiet, mousseChocolate, cha, sucoLaranja, sucoMelao, refriDiet
     inteiro prato, sobremesa, bebida
     inteiro cal1, cal2, cal3
     logico escolheuErrado = falso
-
-    // Definindo valores caloricos:
-    vegetariano = 180
-    peixe = 230
-    frango = 250
-    carne = 350
-    abacaxi = 75
-    sorveteDiet = 110
-    mousseDiet = 170
-    mousseChocolate = 200
-    cha = 20
-    sucoLaranja = 70
-    sucoMelao = 100
-    refriDiet = 65
 
     // Entradas
     escreva("Escolha o seu prato principal: \n\t1 - Vegetariano\n\t2 - Peixe\n\t3 - Frango\n\t4 - Carne\n-> ")
@@ -34,19 +19,19 @@ programa {
     // Processo
     escolha(prato){
       caso 1:
-        cal1 = vegetariano
+        cal1 = 180 //vegetariano
       pare
 
       caso 2:
-        cal1 = peixe
+        cal1 = 230 //peixe
       pare
 
       caso 3:
-        cal1 = frango
+        cal1 = 250 //frango
       pare
 
       caso 4:
-        cal1 = carne
+        cal1 = 350 //carne
       pare
 
       caso contrario:
@@ -56,19 +41,19 @@ programa {
 
     escolha(sobremesa){
       caso 1:
-        cal2 = abacaxi
+        cal2 = 75 //abacaxi
       pare
 
       caso 2:
-        cal2 = sorveteDiet
+        cal2 = 110 //sorveteDiet
       pare
 
       caso 3:
-        cal2 = mousseDiet
+        cal2 = 170 //mousseDiet
       pare
 
       caso 4:
-        cal2 = mousseChocolate
+        cal2 = 200 //mousseChocolate
       pare
 
       caso contrario:
@@ -78,19 +63,19 @@ programa {
 
     escolha(bebida){
       caso 1:
-        cal3 = cha
+        cal3 = 20 //cha
       pare
 
       caso 2:
-        cal3 = sucoLaranja
+        cal3 = 70 //sucoLaranja
       pare
 
       caso 3:
-        cal3 = sucoMelao
+        cal3 = 100 //sucoMelao
       pare
 
       caso 4:
-        cal3 = refriDiet
+        cal3 = 65 //refriDiet
       pare
 
       caso contrario:
