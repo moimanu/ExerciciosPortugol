@@ -1,0 +1,51 @@
+Java:
+  - Orientado a objetos;
+  - É compilado para Java Bytecode;
+
+IDE: 
+  - Apache Net Beans
+
+Exemplo de estrutura básica:
+
+  public class Programa{
+    public static void main(String args[]){
+      //comandos;
+    }
+  }
+
+Variáveis no Java:
+  int
+  boolean
+  final (constante)
+  float
+  double
+
+Operadores (tranquilo)
+
+Operadores lógicos:
+  &&
+  &
+  ||
+  |
+  !
+
+Não esquecer do ponto e vírgula ";"!
+
+Entrada de dados:
+  import java.util.Scanner;
+    Scanner teclado = new Scanner(system.in);
+    int idade = teclado.nextInt();
+    float salario = teclado.nextFloat();
+    String nome = teclado.nextLine();
+
+Saída de dados (tem vários, o ln quebra a linha):
+  System.out.println("Exemplo");
+
+Estrutura de repetição:
+  for(int i = 1; i <= 10; i++){
+    //comandos;
+  }
+
+Concatenar em uma string:
+  É só utilizar o operador de soma como se fosse vírgula.
+  System.out.println(var1 + var2 + var3)
